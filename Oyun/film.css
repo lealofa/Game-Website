@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+
+/* base css start */
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s all ease-in-out;   
+}
+
+
+section{
+    padding: 25px 0.8%;
+}
+
+.heading1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-bottom: 0.1rem solid red;
+}
+
+
+body{
+    height: 300vh;;
+    font-family: "Electrolize", sans-serif;
+    background-color: black;
+
+}
+/* base css end */
+
+/* navbar start */
+.navbar {
+    background-color: black;
+    height: 60px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 7%;
+    
+    
+}
+
+.navbar .logo img {
+    height: 4rem;
+    padding: 5% 1%;
+    object-fit: cover;
+    margin-top: 7px;
+    
+}
+
+.navbar-wrapper a {
+    color: white;
+    margin: 0 3rem;
+    
+   
+
+
+}
+ .navbar .active,
+ .navbar a:hover{
+    color: red;
+    border-color: red;
+}
+
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    column-gap: 15px;
+    
+}
+
+.profile-container img{
+    width: 40px;
+    height: 43px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toogle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.toogle-icon{
+    color: goldenrod;
+}
+
+.toogle-ball{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+}
+/* navbar end */
+
+/* sidebar start */
+.sidebar {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    row-gap: 35px;
+    position: fixed;
+    top: 0;
+    
+}
+
+.sidebar i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* sidebar end */
+
+
+.home{
+    min-height: 100vh;
+    background: url(gta6.jpeg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.home .content-wrapper img{
+    width: 100%;
+    padding-top: 90px;
+    padding-right: 980px;
+    
+}
+
+.home .content-wrapper {
+    padding-top:160px ;
+    margin-left: 65px;
+}
+
+.home .gta-desc{
+    width: 1100px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 8px;
+    font-weight: bold;
+}
+
+.gta-buttons{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.gta-buttons button{
+    padding: 10px 25px;
+    border-radius: 2px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px ;
+    font-weight: bold;
+    
+    
+}
+
+.gta-buttons .play-b{
+    background-color: rgba(255, 0, 200, 0.6);
+}
+
+.gta-buttons .info-b{
+    background-color: rgba(17, 158, 169,0.7);
+}
+/* */
+
+.game .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    
+}
+
+.game-list-filter select{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+
+}
+
+.game-list-filter {
+    padding: 10px 0 50px 0;
+}
+
+.game .heading1,.game-list-filter,.box-head{
+        padding-top: 10px;
+        margin-left: 50px;
+}
+
+.game .box-head img{
+    width: 300px;
+    transition: 0.5s all ease-in-out;
+}
+
+.game .box-head{
+    position: relative;
+}
+
+.game .box-head:hover img{
+    opacity: 0.5;
+    transform: scale(1.08);
+    
+}
+
+.game .box-head:hover .game-title,
+.game .box-head:hover .game-buttons{
+    
+    opacity: 1;
+}
+.game .box-head .game-title{
+    background-color: rgba(40, 40, 40, 0.5  );
+    position: absolute;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 25px;
+    top: 45%;
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
+    
+
+}
+
+
+.game .box-head .game-buttons{
+    background-color: rgba(40, 40, 40, 0.5  );
+    position: absolute;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 20px;
+    top: 58%;
+    left: 29%;
+    display: flex;
+    column-gap: 12px;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;   
+}
+
+#Gow{
+
+    left: 20%;
+
+}
+
+#Mafia2{
+
+    left: 27%;
+}
+
+#Spider-Man2{
+
+    left: 17%;
+}
+
+#Fifa25{
+    left: 29%;
+}
+
+#F1{
+    left: 38%;
+}
+
+#Nba{
+    left: 23%;
+}
+
+#Ufc{
+    left: 33%;
+}
+
+
+.game .box-head .game-buttons:hover{
+    cursor: pointer;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.game .box-head .fa-play:hover{
+    color: green;
+}
+
+.game .box-head .fa-thumbs-up:hover{
+    color: blue;
+}
+
+.game .box-head .fa-thumbs-down:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+.game .game-info{
+    color: white;
+}
+
+.v-trailer{
+    display: none;
+   
+}
+
+.box-head .game-buttons .fa-play:hover .v-trailer {
+ opacity: 1 ;
+ position: absolute;
+ top: -225px;
+ right: -115px;
+ display: block; 
+}
+
+
+
+
+
+
+
